@@ -4,19 +4,26 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon src/app.js",
+    "start": "nodemon previous_scripts/fixActivityserIdMismatch.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@aws-sdk/client-lambda": "^3.876.0",
+    "aws-sdk": "^2.1692.0",
+    "axios": "^1.7.9",
     "body-parser": "^1.20.2",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
+    "https": "^1.0.0",
     "joi": "^17.11.0",
+    "mongodb": "^6.21.0",
+    "node-fetch": "^3.3.2",
     "node-json-db": "^2.3.0",
-    "nodemon": "^3.0.2",
+    "nodemon": "^3.1.9",
     "speakeasy": "^2.0.0",
-    "uuid": "^9.0.1"
+    "uuid": "^9.0.1",
+    "ws": "^8.21.1"
   }
 }
